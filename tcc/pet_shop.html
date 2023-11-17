@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <title>Pet Shop</title>
+  
+  <img src="img/logo1.png">
+
+<style>
+
+body{
+  background-image: url("img/fundo.jpg");
+}
+
+img{
+  width: 200px;
+  margin-left: 800px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 2px;
+  margin-left: -15px;
+  margin-right: -15px;
+  overflow: hidden;
+  background-color: #4d6886;
+}
+
+.container {
+ margin-right: 600px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #3a4b5e;
+}
+
+.active {
+  background-color: #70c7a6;
+}
+
+.slider{
+  overflow: hidden;
+
+}
+.slider > .slider-content{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  transition: all 500ms ease;
+
+}
+
+.slider > .slider-content > .slider-item {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.slider > input:nth-child(1):checked ~ .slider-content{
+  transform: translateX(0%);
+}
+
+.slider > input:nth-child(2):checked ~ .slider-content{
+  transform: translateX(-100%);
+}
+.slider > input:nth-child(3):checked ~ .slider-content{
+  transform: translateX(-200%);
+}
+
+.slider > input:nth-child(4):checked ~ .slider-content{
+  transform: translateX(-300%);
+}
+
+.slider > input:nth-child(5):checked ~ .slider-content{
+  transform: translateX(-400%);
+}
+
+.slider > input:nth-child(6):checked ~ .slider-content{
+  transform: translateX(-500%);
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a  class="active" href="file:///C:/Users/LarissaFerreiraGomes/Desktop/comandos/inscri%C3%A7%C3%A3o.html">Seja nosso Cliente</a></li>
+  <li><a href="file:///C:/Users/LarissaFerreiraGomes/Desktop/comandos/ra%C3%A7%C3%B5es.html">Rações e Petiscos</a></li>
+  <li><a href="#brinquedos">Brinquedos</a></li>
+  <li><a href="#banho">Banho e tosa</a></li> 
+  <li><a href="#medicação">Medicamentos e Vacinas</a></li>
+  <li><a href="#Serviços">Agendamentos de Serviços</a></li>
+</ul>
+
+<section class="slider">
+  <input name='slide' type="radio" >
+  <input name='slide' type="radio" checked>
+  <input name='slide' type="radio">
+  <input name='slide' type="radio">
+  <input name='slide' type="radio">
+  <input name='slide' type="radio">
+
+  <div class="slider-content">
+    <img src="img/pet_style.png" style="width: 90%; height: auto;" />
+    <img src="img/racao.png" style="width: 90%; height: auto;" />
+    <img src="img/brinquedos.png" style="width: 90%; height: auto;" />
+    <img src="img/banho.png" style="width: 90%; height: auto;" />
+    <img src="img/vacinas.png" style="width: 90%; height: auto;" />
+    <img src="img/agenda.png" style="width: 90%; height: auto;" />
+    
+  </div>
+</section>
+
+</body>
+</html>
